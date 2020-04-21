@@ -11,8 +11,6 @@ class ReservationsController extends Controller
     }
 
     public function getCreate() {
-
-
         return view('reservations.edit');
     }
 

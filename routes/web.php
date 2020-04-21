@@ -23,6 +23,6 @@ Route::post('clients/save', 'ClientController@postSave')->name('clients.save');
 Route::any('rooms/{clientId}', 'RoomsController@checkAvailableRooms')->name('rooms.availibilty');
 
 Route::get('reservations', 'ReservationsController@getIndex')->name('reservations');
-Route::get('reservations/new', 'ReservationsController@getCreate')->name('reservations.new');
+Route::get('reservations/new/{clientId}', 'ReservationsController@getCreate')->name('reservations.new');
 Route::get('reservations/{id}', 'ReservationsController@getEdit')->name('reservations.edit');
 Route::post('reservations/save', 'ReservationsController@postSave')->name('reservations.save');

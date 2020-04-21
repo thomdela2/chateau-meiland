@@ -4,7 +4,8 @@
 <div class="row">
     <div class="medium-12 large-12 columns">
       <h4>Nieuwe klant</h4>
-      <form action="/clients/new" method="post">
+      <form action="{{ route('clients.save') }}" method="post">
+        @csrf
         <div class="medium-4  columns">
           <label>Titel</label>
           <select name="form[title]">

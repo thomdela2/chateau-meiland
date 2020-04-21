@@ -19,6 +19,8 @@ class ClientController extends Controller
     }
 
     public function postSave(Request $request) {
+        // dd('We zijn hier aangekomen');
 
+        return redirect()->route('clients');
     }
 }
