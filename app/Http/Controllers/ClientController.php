@@ -15,6 +15,7 @@ class ClientController extends Controller
     }
 
     public function getEdit($id) {
+        // dump($id);
         return view('clients.edit');
     }
 

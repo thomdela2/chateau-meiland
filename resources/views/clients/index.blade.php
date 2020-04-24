@@ -30,16 +30,16 @@
                     <td>Mr. Luc Charles Zeebroek</td>
                     <td>kamagurka@humo.be</td>
                     <td>
-                        <a class="hollow button" href="./clients_new.html">BEWERK</a>
-                        <a class="hollow button warning" href="./book_room.html">BOEK EEN KAMER</a>
+                        <a class="hollow button" href="{{route('clients.edit', 2)}}">BEWERK</a>
+                        <a class="hollow button warning" href="{{ route('reservations.new', 2)}}">BOEK EEN KAMER</a>
                     </td>
                 </tr>
                 <tr>
                     <td>Ms. Eva Mouton</td>
                     <td>eva.mouton@flair.be</td>
                     <td>
-                        <a class="hollow button" href="./clients_new.html">BEWERK</a>
-                        <a class="hollow button warning" href="./book_room.html">BOEK EEN KAMER</a>
+                        <a class="hollow button" href="{{route('clients.edit', 3)}}">BEWERK</a>
+                        <a class="hollow button warning" href="{{ route('reservations.new', 3)}}">BOEK EEN KAMER</a>
                     </td>
                 </tr>
 
